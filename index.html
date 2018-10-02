@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abdul Kalam</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="default.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Abdul Kalam</title>
 </head>
 
 <body>
-
     <header id="Home">
         <nav class="navtop">
             <div class="navtopicon">
@@ -20,7 +21,7 @@
                 <a href="#Home">
                     <li>Home</li>
                 </a>
-                <a href="#About">
+                <a href="#Aboutt">
                     <li>About</li>
                 </a>
                 <a href="#Achievements">
@@ -34,40 +35,45 @@
                 </a>
             </ul>
         </nav>
-        <img src="bg_image2.jpg" alt="main" class="bg_img">
-        <div class="downstyle">
-            <a href="#About"><img src="setsetset.png" alt="" class="downicon"></a>
+        <div class="bgimagediv">
+            <img src="bg_image2.jpg" alt="" class="bgimage">
+        </div>
+        <div id="Aboutt"></div>
+        <div class="downarrow">
+            <img src="down.png" alt="" class="downarrowimg">
         </div>
     </header>
-
     <section id="About">
-        <div class="kalamsel">
-            <img src="kalamcir.png" alt="" class="kalamimg">
+        <div class="maincontainer">
+            <div class="kalamimgcon">
+                <img src="kalamcir.png" alt="" class="kalamimg">
+                <p class="abdultext">
+                    <span class="abef1">A.P.J.</span>
+                    <span class="abef2">Abdul</span>
+                    <span class="abef3">Kalam</span>
+                </p>
+                <p class="pretext">Former President of India</p>
+                <div class="containerbox">
+                    <p class="abouttext">Dr. Avul Pakir Jainulabdeen Abdul Kalam was an Indian
+                        scientist who served as the 11th President of India from 2002 to 2007.
+                        He was born and raised in Rameswaram,
+                        Tamil Nadu and studied physics and aerospace engineering.
+                        He spent the next four decades as a scientist and science administrator,
+                        mainly at the Defence Research and Development Organisation (DRDO) and
+                        Indian Space Research Organisation (ISRO) and was intimately involved
+                        in India's civilian space programme and military missile development efforts.
+                        He thus came to be known as the Missile Man of India for his work on the
+                        development of ballistic missile and launch vehicle technology. He
+                        also played a pivotal organisational, technical,
+                        and political role in India's Pokhran-II nuclear
+                        tests in 1998, the first since the original nuclear
+                        test by India in 1974.
+                    </p>
+                </div>
+            </div>
         </div>
-        <p class="abdultext">
-            <span class="abef1">A.P.J.</span>
-            <span class="abef2">Abdul</span>
-            <span class="abef3">Kalam</span>
-        </p>
-        <div class="containerbox">
-            <p class="abouttext">Dr. Avul Pakir Jainulabdeen Abdul Kalam was an Indian
-                scientist who served as the 11th President of India from 2002 to 2007.
-                He was born and raised in Rameswaram,
-                Tamil Nadu and studied physics and aerospace engineering.
-                He spent the next four decades as a scientist and science administrator,
-                mainly at the Defence Research and Development Organisation (DRDO) and
-                Indian Space Research Organisation (ISRO) and was intimately involved
-                in India's civilian space programme and military missile development efforts.
-                He thus came to be known as the Missile Man of India for his work on the
-                development of ballistic missile and launch vehicle technology. He
-                also played a pivotal organisational, technical,
-                and political role in India's Pokhran-II nuclear
-                tests in 1998, the first since the original nuclear
-                test by India in 1974.
-            </p>
-        </div>
-        <p class="pretext">Former President of India</p>
     </section>
+
 
     <section id="Achievements">
         <p class="architext">Achievements</p>
@@ -99,8 +105,8 @@
                 <p class="datetextbox">(1997)</p>
                 <div class="contenttextbox">
                     <p>"The highest civilian award of the Republic of India,
-                        the award is conferred "in recognition of exceptional
-                        service/performance of the highest order", without
+                        the award is conferred in recognition of exceptional
+                        service / performance of the highest order, without
                         distinction of race, occupation, position, or sex."
                     </p>
                 </div>
@@ -109,7 +115,7 @@
                 <p class="headtextbox">SLV-III</p>
                 <p class="datetextbox">(1969)</p>
                 <div class="contenttextbox">
-                    <p>"He became the Project Director of India’s first indigenous
+                    <p>"He became the Project Director of India&apos;s first indigenous
                         Satellite Launch Vehicle (SLV-III).
                         In July 1980, his team was
                         successful in deploying the Rohini satellite near the orbit of the Earth."
@@ -152,24 +158,17 @@
                 </div>
             </div>
             <div class="boxc">
-                <p class="headtextbox">World's Student Day</p>
+                <p class="headtextbox">World&apos;s Student Day</p>
                 <p class="datetextbox">(2010)</p>
                 <div class="contenttextbox">
                     <p>"His love for students and focus on promoting education,
-                         the United Nations declared his birthday (October 15) as
-                          ‘World Student’s Day’ in 2010."
+                        the United Nations declared his birthday (October 15) as
+                        &apos;World Student&apos;s Day&apos; in 2010."
                     </p>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="Quotes">
-        <p class="quotesheadtext">Quotes</p>
-        <hr class="quoteshr">
-        <div class="quotecontainer"></div>
-    </section>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">

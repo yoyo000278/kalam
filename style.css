@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-@import url('https://fonts.googleapis.com/css?family=Concert+One');
-@import url('https://fonts.googleapis.com/css?family=Changa');
-@import url('https://fonts.googleapis.com/css?family=Kreon');
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Concert+One");
+@import url("https://fonts.googleapis.com/css?family=Changa");
+@import url("https://fonts.googleapis.com/css?family=Kreon");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
 
 body {
   margin: 0;
@@ -12,15 +12,7 @@ body {
   background-color: #818181;
 }
 
-.bg_img {
-  background-position: centre;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: relative;
-  top: 40px;
-}
-
+/*Navigation bar coding*/
 .navtop {
   width: 100%;
   background: #080706;
@@ -37,8 +29,8 @@ body {
   text-align: center;
 }
 
-.navabdul{
-  width: 80%
+.navabdul {
+  width: 80%;
 }
 
 .navtoplist li {
@@ -47,7 +39,7 @@ body {
   padding: 14px;
   font-size: 18px;
   font-weight: 700;
-  font-family: 'Changa', sans-serif;
+  font-family: "Changa", sans-serif;
 }
 
 .navtoplist li:hover {
@@ -70,183 +62,171 @@ body {
   font-size: 25px;
   display: none;
 }
+/*end of naviation coding*/
 
-.downicon {
-  width: 4%;
+.bgimage {
+  background-position: centre;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+.downarrow {
+  text-align: center;
+  opacity: 0.8;
+  display: block;
+  animation: downAnim 2s infinite;
+  position: relative;
+  z-index: 1;
+  top: -100px;
+}
+.downarrowimg {
+  width: 5%;
   height: 2%;
 }
-.downstyle {
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  top: -60px;
-  opacity: 0.8;
-  animation: downAnim 2s infinite;
-}
 
-.kalamsel {
+.kalamimgcon {
   text-align: center;
-  position: relative;
-  top: 20px;
   z-index: 1;
+  position: relative;
+  top: -100px;
 }
 .kalamimg {
-  width: 25%;
+  width: 30%;
+}
+.kalamimg:hover {
+  transform: scale(1.05);
+}
+.maincontainer {
+  width: 85%;
+  height: 470px;
+  background-color: #efefef;
+  margin: 0 auto;
+  border: 5px solid #080706;
+  border-radius: 15px;
+  margin-top: 100px;
 }
 
-.kalamimg:hover{
-  transform: scale(1.05);
+#About {
+  margin-top: 20px;
 }
 
 .abdultext {
-  font-size: 40px;;
+  font-size: 40px;
   text-align: center;
   font-weight: 600;
-  position: relative;
-  top: 18px;
-  background: -webkit-linear-gradient(top, orange,orange, green);
+  background: -webkit-linear-gradient(top, orange, orange, green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  z-index: 1;
-  font-family: 'Concert One', cursive;
-}
-.containerbox{
-  height: 500px;
-  background-color: #efefef;
-  width: 85%;
-  margin: 0 auto;
-  border-style: solid;
-  border-width: 5px;
-  position: relative;
-  top: -170px;
-  border-radius: 10px;
-  overflow: hidden;
-  padding:15% 10% 0% 10%;
-  text-align: justify;
-  margin-bottom: -200px
-}
-.abouttext{
-  font-size: 19px;
-  font-family: 'Kreon', serif;
-  word-spacing: 3px;
-  color:#566573;
+  font-family: "Concert One", cursive;
 }
 
-.pretext{
+.abef1:hover,
+.abef2:hover,
+.abef3:hover {
+  background: -webkit-linear-gradient(top, green, orange, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pretext {
   font-size: 23px;
   text-align: center;
-  font-weight:600; 
-  position: relative;
-  z-index: 1;
-  top:-300px;
-  font-family: 'Josefin Sans', sans-serif;
-  color: #49C6C1;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  color: #49c6c1;
+  margin-top: -15px;
 }
-.abef1:hover,.abef2:hover,.abef3:hover{
-  background: -webkit-linear-gradient(top, green,orange, orange);
+
+.containerbox {
+  text-align: justify;
+  padding: 0px 4% 2% 4%;
+}
+
+.abouttext {
+  font-size: 19px;
+  font-family: "Kreon", serif;
+  word-spacing: 3px;
+  color: #566573;
+}
+
+#Achievements {
+  margin-top: 50px;
+}
+
+.architext {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Concert One", cursive;
+  background: -webkit-linear-gradient(top, orange, orange, green);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.architext{
-  text-align: center;
-  font-size: 38px;
-  font-family: 'Concert One', cursive;
-  margin-top: 30px;
-  color: #37474F;
+.architext:hover {
+  background: -webkit-linear-gradient(top, green, orange, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.achevhr{
+.achevhr {
   color: #080706;
-  width: 8%;
+  width: 7%;
   border-color: #080706;
   border-width: 5px;
   margin-top: -15px;
 }
 
-#About{
-  margin-top: 30px;
-}
-
-#Achievements{
-  margin-top: 60px;
-}
-
-.mainboxcontainer{
+.mainboxcontainer {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
-  padding: 0px 5% 0px 5%;
+  padding: 0px 2% 0px 2%;
 }
 
-.boxc{
-  width: 20%;
-  height: 320px;
+.boxc {
+  width: 22%;
+  height: 330px;
   background: #efefef;
   margin: 10px;
   box-sizing: border-box;
   border: 3px solid #080706;
   border-radius: 10px;
-  padding: 1%;
   text-align: center;
 }
 
-.datetextbox{
+.datetextbox {
   font-size: 22px;
-  font-family: 'Fredoka One', cursive;
-  color: #78909C;
-  margin-top: -15px;
+  font-family: "Fredoka One", cursive;
+  color: #78909c;
+  margin-top: -16px;
 }
 
-.contenttextbox{
+.contenttextbox {
   text-align: justify;
-  font-family: 'Kreon', serif;
-  color:#566573;
+  font-family: "Kreon", serif;
+  color: #566573;
   font-size: 17px;
+  padding: 0px 4% 0px 4%;
 }
-.boxc:hover{
+.boxc:hover {
   transform: scale(1.08);
 }
 
-.headtextbox{
-  font-size: 25px;
-  font-family: 'Josefin Sans', sans-serif;
+.headtextbox {
+  font-size: 23px;
+  font-family: "Josefin Sans", sans-serif;
   color: #d1b280;
   font-weight: 600;
-  text-decoration: underline;
+  background-color: #080706;
+  padding-top: 3%;
 }
 
-#Quotes{
-  margin-top: 50px;
-}
-.quotecontainer{
-  width: 85%;
-  height: 200px;
-  background-color: #efefef;
-  margin: 0 auto;
-  border: 3px solid #080706;
-  border-radius: 50px 0px 50px 0px;
-}
-
-.quotesheadtext{
-  text-align: center;
-  font-size: 38px;
-  font-family: 'Concert One', cursive;
-  color: #37474F;
-}
-
-.quoteshr{
-  width: 4%;
-  color: #080706;
-  border-color: #080706;
-  border-width: 5px;
-  margin-top: -20px;
-}
-
-@media (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /*Navigation bar coding*/
   .navtopicon {
     display: block;
   }
@@ -263,70 +243,151 @@ body {
   .active {
     display: block;
   }
-  .downstyle {
-    top: -5px;
-  }
-  .containerbox{
-    top: -60px;
-    border-width: 3px;
-    margin-bottom: -90px;
-    height: 450px;
-  }
-  .abdultext{
-    font-size: 21px;
-    top: 20px;
+  /*end of naviation coding*/
+
+  .downarrow {
+    top: -40px;
+    animation: downAnime 2s infinite;
   }
 
-  .pretext{
-    font-size: 15px;
-    top: -357px;;
+  .maincontainer {
+    margin-top: 20px;
+    height: 640px;
   }
 
-  .abouttext{
-    font-size: 12px;
-    padding-top: 12%;
+  .kalamimgcon {
+    top: -40px;
   }
 
-.architext{
-  font-size: 26px;
-  margin-top: -20px;
-}
-
-.achevhr{
-  border-width: 3px;
-  margin-top: -17px;
-}
-
-.headtextbox{
-  font-size: 18px;
-}
-.datetextbox{
-  font-size: 17px;
-}
-.contenttextbox{
-  font-size: 15px;
-}
-}
-
-@media screen and (max-width:1200px){
-  .boxc{
+  .kalamimg {
     width: 40%;
-    padding: 3%
+  }
+  .abdultext {
+    font-size: 30px;
+  }
+
+  .pretext {
+    font-size: 19px;
+  }
+
+  .abouttext {
+    font-size: 15px;
+    word-spacing: 2px;
+  }
+
+  .boxc {
+    width: 60%;
+  }
+
+  @keyframes downAnime {
+    50% {
+      top: -20px;
+    }
   }
 }
 
-@media screen and (max-width:600px){
-  .boxc{
-    width: 70%;
-    padding: 6% 4% 4% 4%;
-    height: 280px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /*Navigation bar coding*/
+  .navtopicon {
+    display: block;
+  }
+  .navtoplist {
+    width: 100%;
+    display: none;
+  }
+
+  .navtoplist li {
+    display: block;
+    text-align: center;
+  }
+
+  .active {
+    display: block;
+  }
+  /*end of naviation coding*/
+
+  .downarrow {
+    top: -60px;
+    animation: downAnimee 2s infinite;
+  }
+
+  .maincontainer {
+    margin-top: 40px;
+    height: 620px;
+  }
+
+  .kalamimgcon {
+    top: -50px;
+  }
+
+  .kalamimg {
+    width: 40%;
+  }
+  .abdultext {
+    font-size: 35px;
+  }
+
+  .pretext {
+    font-size: 20px;
+  }
+
+  .abouttext {
+    font-size: 17px;
     word-spacing: 2px;
+  }
+
+  .boxc {
+    width: 42%;
+  }
+
+  @keyframes downAnimee {
+    50% {
+      top: -40px;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /*Navigation bar coding*/
+  .navtoplist {
+    word-spacing: 30px;
+  }
+  /*end of naviation coding*/
+
+  .downarrow {
+    top: -70px;
+    animation: downAnimeee 2s infinite;
+  }
+
+  .maincontainer {
+    margin-top: 50px;
+    height: 550px;
+  }
+
+  .kalamimgcon {
+    top: -70px;
+  }
+
+  .kalamimg {
+    width: 36%;
+  }
+  .abdultext {
+    font-size: 40px;
+  }
+
+  .boxc {
+    width: 30%;
+  }
+
+  @keyframes downAnimeee {
+    50% {
+      top: -45px;
+    }
   }
 }
 
 @keyframes downAnim {
   50% {
-    top: -25px;
+    top: -60px;
   }
 }
-
